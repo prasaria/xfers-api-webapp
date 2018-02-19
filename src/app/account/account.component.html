@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Welcome
+  </h1>
+  <br/>
+  <h3><p>You have successfully created your wallet</p></h3>
+  <h3><p>You can top up your wallet by transferring to the following bank: </p></h3>
+  <br/>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Bank Name</th>
+        <th>Account Number</th>
+        <th>Unique id</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ account.bank_accounts[0].bank_abbrev }}</td>
+        <td>{{ account.bank_accounts[0].account_no }}</td>
+        <td>{{ account.bank_accounts[0].id }}</td>
+        <td>{{ account.available_balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
