@@ -16,6 +16,11 @@ const appRoutes: Routes = [
     component: AccountComponent,
     data: { title: 'My Account' }
   },
+  {
+    path: 'transfer',
+    component: TransferComponent,
+    data: {title: 'Transfer Info'}
+  },
   { path: '',
     redirectTo: '/account',
     pathMatch: 'full'

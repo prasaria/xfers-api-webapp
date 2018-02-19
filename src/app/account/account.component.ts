@@ -12,7 +12,7 @@ import { Http, Headers, Response,  RequestOptions } from '@angular/http';
 })
 export class AccountComponent implements OnInit {
 
-  account: {};
+  account: any;
 
   constructor(private http: HttpClient, private request: Http) {}
 

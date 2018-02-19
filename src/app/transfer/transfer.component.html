@@ -1,3 +1,28 @@
-<p>
-  transfer works!
-</p>
+<div class="container">
+  <h1>Transfer Info
+  </h1>
+  <br/>
+  <h2><a [routerLink]="['/account']">
+         Back to My Account
+       </a>
+  </h2>
+  <p>{{ transfer.bank_name_full }}</p>
+  <p>{{ transfer.bank_account_no }}</p>
+  <p>{{ transfer.bank_payee_name }}</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Bank Destination</th>
+        <th>Account No</th>
+        <th>Unique ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transferList of transferLists">
+        <td>{{ transferList.bank_name_full }}</td>
+        <td>{{ transferList.bank_account_no }}</td>
+        <td>{{ transferList.unique_id }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
